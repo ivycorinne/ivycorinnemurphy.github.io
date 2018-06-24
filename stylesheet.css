@@ -2,9 +2,10 @@ body {
 	background-color: #000;
 }
 
-body p {
+body p, a {
 	color: #FFF;
-	font-family: "Courier New"
+	font-family: "Courier New";
+	text-decoration: none;
 }
 
 .main-text {
