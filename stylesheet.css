@@ -10,11 +10,12 @@ body p, a {
 
 .main-text {
 	position: absolute;
-  	width: 400px;
-  	height: 200px;
-  	z-index: 15;
-  	top: 50%;
-  	left: 50%;
-  	margin: -100px 0 0 -200px;
-  	text-align: center;
+	margin: auto;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	width: 400px;
+	height: 100px;
+	text-align: center;
 }
