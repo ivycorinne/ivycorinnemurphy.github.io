@@ -1,0 +1,143 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    overflow: hidden; /* Prevent body overflow */
+}
+
+p {
+    overflow: hidden; /* Prevent body overflow */
+}
+
+ul {
+    list-style: none; /* Remove bullets */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+}
+
+a {
+    color: #fff;
+}
+
+.all-caps-text {
+    text-transform: uppercase; /* Convert text to uppercase */
+    font-size: 20px; 
+}
+
+.all-caps-subtext {
+    text-transform: uppercase; /* Convert text to uppercase */
+    font-size: 14px; 
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    width: 100vw; /* Full viewport width */
+    height: 100vh; /* Full viewport height */
+    position: relative; /* Position the grid container relative to the body */
+}
+
+.grid-item {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    font-size: 50px;
+    position: fixed;
+    width: 50vw; /* Half of the viewport width */
+    height: 50vh; /* Half of the viewport height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px; /* Add padding around each grid item */
+    cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+.grid-item:nth-child(2) {
+    top: 0;
+    right: 0;
+}
+
+.grid-item:nth-child(3) {
+    bottom: 0;
+    left: 0;
+}
+
+.grid-item:nth-child(4) {
+    bottom: 0;
+    right: 0;
+}
+
+/* Center the content vertically and horizontally */
+.grid-item::before {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    margin-right: -0.25em; /* Adjust for the content padding */
+}
+
+.grid-item:hover {
+    transform: scale(1.45); /* Increase size on hover */
+}
+
+.grid-item > span {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+
+.grid-item img {
+    max-width: 50%;
+    max-height: 50%;
+}
+
+.center-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #000;
+}
+
+.content {
+    text-align: left;
+    color: #fff;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    width: 70%;
+}
+
+.resume-bullets {
+    font-size: 14px; /* Adjust the font size as needed */
+    color: #fff;
+    background-color: #000;
+}
+
+.credit {
+    font-size: 12px; /* Adjust the font size as needed */
+    color: #fff;
+    font-style: italic;
+}
+
+/* CSS for the back arrow */
+.back-arrow {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    font-size: 24px;
+    z-index: 999; /* Ensure the arrow is above other content */
+}
+
+.back-arrow a {
+    text-decoration: none;
+    color: #333; /* Adjust the color as needed */
+}
+
+.back-arrow:hover {
+    transform: scale(1.05); /* Increase size on hover */
+}
