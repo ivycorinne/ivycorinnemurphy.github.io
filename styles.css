@@ -2,8 +2,8 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
-    overflow: hidden; /* Prevent body overflow */
+    background-color: #000;
+    overflow: auto; /* Prevent body overflow */
 }
 
 p {
@@ -110,7 +110,6 @@ a {
     background-color: rgba(0, 0, 0, 0.5);
     border-radius: 10px;
     width: 70%;
-    overflow-y: auto;
 }
 
 .resume-bullets {
